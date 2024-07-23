@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
+        DOCKERHUB_CREDENTIALS = credentials('48960b99-5f9f-46ee-b62b-f20e9e9acc98')
         IMAGE_NAME = "dy010101/desafio-13"
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
