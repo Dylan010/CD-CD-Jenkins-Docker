@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('48960b99-5f9f-46ee-b62b-f20e9e9acc98')
+        DOCKERHUB_CREDENTIALS = '48960b99-5f9f-46ee-b62b-f20e9e9acc98' // ID de credenciales en Jenkins
         IMAGE_NAME = "dy010101/desafio-13"
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
@@ -47,7 +47,7 @@ pipeline {
         stage('Push to DockerHub') {
             steps {
                 script {
-                    docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
+                    docker.withRegistry('https://index.docker.io/v1/', DOCKERHUB_CREDENTIALS) {
                         docker.image("${IMAGE_NAME}:${IMAGE_TAG}").push()
                         docker.image("${IMAGE_NAME}:${IMAGE_TAG}").push("latest")
                     }
