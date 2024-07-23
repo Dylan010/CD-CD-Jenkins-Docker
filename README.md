@@ -4,7 +4,7 @@
 Este repositorio contiene un ejemplo de implementación continua (CI/CD) utilizando Jenkins y Docker para una aplicación Flask simple. El proyecto incluye un `Dockerfile` para construir la imagen del contenedor, un `Jenkinsfile` para la configuración del pipeline en Jenkins, y una aplicación Flask que se muestra en la página principal.
 
 ## Estructura del Proyecto
-
+```
 .
 ├── app.py
 ├── DESAFIO_13.pdf
@@ -14,7 +14,7 @@ Este repositorio contiene un ejemplo de implementación continua (CI/CD) utiliza
 ├── requirements.txt
 └── templates
     └── index.html
-
+```
 ## Requisitos
 
 1. **Docker**: Asegúrate de tener Docker instalado en tu sistema. Puedes seguir las instrucciones en [Docker Installation](https://docs.docker.com/get-docker/).
