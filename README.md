@@ -42,7 +42,7 @@ Este repositorio contiene un ejemplo de implementación continua (CI/CD) utiliza
    - Construye la imagen de Docker con el siguiente comando:
 
      ```bash
-     docker build -t dy010101/desafio-13:latest .
+     docker build -t tunombre/desafio-13:latest .
      ```
 
 3. **Configurar Jenkins**
